@@ -1,0 +1,338 @@
+@font-face {
+    font-family: Vazir;
+    src: url(../font/vazir/Vazir-Medium.woff) format("woff");
+    src: url(../font/vazir/Vazir-Medium.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: Vazir-Bold;
+    src: url(../font/vazir/Vazir-Bold.woff);
+}
+@font-face {
+    font-family: Vazir-Medium;
+    src: url(../font/vazir/Vazir-Medium.woff);
+    /* src: url(../font/shabnam/Shabnam-Medium.woff); */
+}
+@font-face {
+    font-family: Vazir-Light;
+    src: url(../font/vazir/Vazir-Light.woff);
+    /* src: url(../font/shabnam/Shabnam-Light.woff); */
+}
+
+*{
+    font-family: Vazir-Light;
+    box-sizing: border-box;
+}
+
+::selection{
+    background-color: #37474F;
+    color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: Vazir-Bold;
+}
+h1{
+    font-size: 56px;
+}
+h2{
+    font-size: 48px;
+}
+h3{
+    font-size: 40px;
+}
+h4{
+    font-size: 32px;
+}
+h5{
+    font-size: 24px;
+}
+h6{
+    font-size: 16px;
+}
+
+body{
+    background-color: #F2F8FD;
+    padding: 0px 120px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav , ul , li{
+    display: inline;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+    margin:0px 16px;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+header nav ul li a:hover{
+    text-shadow: 0px 0px 4px #26A69A;
+}
+
+.headBtn button{
+    width: 112px;
+    height: 40px;
+    outline: none;
+    border-color: transparent;
+    background-color: #D32F2F;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    color: white;
+    font-size: 14px;
+    font-family: Vazir-Medium;
+    cursor: pointer;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+.headBtn button:hover{
+    box-shadow: 0px 0px 8px #FF7043;
+}
+
+.firstSec{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.firstSec .rightSide{
+    width: 70%;
+    height: 640px;
+    background-color: #FF7043;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    align-items: start;
+    padding-right: 64px;
+}
+.firstSec .leftSide{
+    width: 30%;
+    height: 640px;
+    background-color: #26A69A;
+    position: relative;
+}
+
+.firstSec .leftSide img{
+    width: 480px;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: -47%;
+    margin: auto 0px;
+}
+
+.firstSec .rightSide h1{
+    color: white;
+}
+
+.firstSec .rightSide p{
+    color: white;
+    font-size: 20px;
+    width: 560px;
+    text-align: justify;
+}
+
+.actionBtn button{
+    width: 181px;
+    height: 56px;
+    margin-left:32px;
+    outline: none;
+    border-color: transparent;
+    background-color: #26A69A;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    color: white;
+    font-size: 20px;
+    font-family: Vazir-Medium;
+    cursor: pointer;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+.actionBtn button:hover{
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+.gameTool{
+    margin: 0px 120px;
+}
+
+.gameToolContainer{
+    display: grid;
+    grid-template-columns: repeat(4 , 237px);
+    gap: 16px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.gameToolItem{
+    height: 237px;
+    background-color: #FFAB91;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+
+.offerSec{
+    display: flex;
+    justify-content: space-between;
+    align-content: end;
+    margin-top: 72px;
+    margin-right: 120px;
+    margin-left: 120px;
+}
+
+.offerSec .leftSide{
+    width: 40%;
+}
+
+.offerSec .rightSide{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: justify;
+    gap: 24px;
+    width: 60%;
+}
+
+.offerSec .rightSide p{
+    font-size: 20px;
+    width: 600px;
+}
+
+.offerSec .rightSide button{
+    width: 400px;
+    height: 56px;
+    font-size: 20px;
+    font-family: Vazir-Bold;
+    color: white;
+    outline: none;
+    border-color: transparent;
+    background-color: #26A69A;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    cursor: pointer;
+}
+
+.offerSec .leftSide img{
+    width: 100%;
+    padding-right: 32px;
+}
+
+.careTool{
+    margin: 0px 120px;
+    margin-top: 72px;
+}
+
+.careToolContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.careToolItem{
+    width: 50%;
+    height: 480px;
+    background-color: #FFAB91;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+
+.careToolSub {
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    width: 50%;
+    gap: 16px;
+    margin-left: 16px;
+}
+
+.careToolSubItem{
+    background-color: #FFAB91;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+
+.wearSec{
+    margin: 72px 120px 0px 120px;
+}
+
+.wearContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wearItem h5{
+    text-align: center;
+}
+
+.wearItem img{
+    width: 280px;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+.wearItem img:hover{
+    box-shadow: 0px 0px 32px #FF7043;
+}
+
+.wearItem:nth-child(3) img{
+    border: 1px solid #D32F2F;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
